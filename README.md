@@ -3,6 +3,7 @@ Install mongoDB following:
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
 Run a mongodb in the standard port 27017
+
     mongod
 
 ## Compile & Deploy
@@ -10,8 +11,10 @@ Run a mongodb in the standard port 27017
 
 ## Usage Example
 Make a post petition to url localhost:8080/run with the input in the body:
+
 Example:
 
+```javascript
 curl -X POST \
   http://localhost:8080/run \
   -H 'Cache-Control: no-cache' \
@@ -26,8 +29,10 @@ curl -X POST \
   ],
   "instructions" : "NNESEESWNWW"
 }'
-
+```
 Respose:
+
+```javascript
 {
     "coords": [
         1,
@@ -35,3 +40,4 @@ Respose:
     ],
     "patches": 1
 }
+```
